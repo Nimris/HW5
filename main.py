@@ -9,7 +9,6 @@ class PrivatBankAPIClient:
     
     def __init__(self, days: int):
         self.days = days
-        # self.session = None
     
     async def fetch_currency_rates(self, date: str):
         url = f"{self.Base_URL}{date}"
